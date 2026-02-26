@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y g++
+RUN apt-get update && apt-get install -y --no-install-recommends --fix-missing g++ libc6-dev
 
 WORKDIR /app
 
